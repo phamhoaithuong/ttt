@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp" >
+
+    <TextView
+        android:id="@+id/txtTenDangKy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên Đăng Nhập:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000099" />
+
+    <EditText
+        android:id="@+id/edIDDangKy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@anim/edittextshape"
+        android:ems="10"
+        android:hint="Tên đăng nhập / Email"
+        android:textColor="#CD0000" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtMatKhauDangKy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mật Khẩu:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000099" />
+
+    <EditText
+        android:id="@+id/edMKDangKy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@anim/edittextshape"
+        android:ems="10"
+        android:hint="*******"
+        android:inputType="textPassword"
+        android:textColor="#CD0000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnDangKyOK"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#008080"
+            android:onClick="DangNhap"
+            android:text="Đăng Ký"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnNhapLaiDK"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:background="#008080"
+            android:text="Nhập lại"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</LinearLayout>

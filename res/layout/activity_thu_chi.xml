@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/lblSODU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:drawableLeft="@drawable/dollar"
+            android:text=" Số dư:" />
+
+        <TextView
+            android:id="@+id/txtSoTienDu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/spinner_down"
+            android:padding="3dp"
+            android:text="5.000.000"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#FFFFFF"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/lblTungaytungay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:text="Từ ngày:" />
+
+        <TextView
+            android:id="@+id/txtTuNgay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/spinner_down"
+            android:padding="3dp"
+            android:text="Chọn ngày"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:background="#FFFFFF"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:text="Đến ngày:" />
+
+        <TextView
+            android:id="@+id/txtDenNgay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/spinner_down"
+            android:padding="3dp"
+            android:text="Chọn ngày"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:background="#FFFFFF"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/txtOkNgay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_down"
+            android:gravity="center"
+            android:onClick="truyVanNgay"
+            android:padding="3dp"
+            android:text="Tìm"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtResetNgay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_down"
+            android:gravity="center"
+            android:onClick="resetNgay"
+            android:padding="3dp"
+            android:text="Làm lại"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:padding="5dp" >
+
+        <ListView
+            android:id="@+id/listView_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#0057CC"
+            android:dividerHeight="1dp" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

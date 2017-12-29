@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên Đăng Nhập:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000099" />
+
+    <EditText
+        android:id="@+id/edIDQuenMatKhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@anim/edittextshape"
+        android:ems="10"
+        android:hint="Tên đăng nhập / Email"
+        android:textColor="#CD0000" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/maKiemTra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã kiểm tra:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000099" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/maKiemTraOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:textColor="#FFCB00"
+            android:drawableRight="@drawable/refresh"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập mã kiểm tra:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000099" />
+
+    <EditText
+        android:id="@+id/edMaKiemTra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@anim/edittextshape"
+        android:ems="10"
+        android:hint="Mã kiểm tra"
+        android:inputType="number"
+        android:textColor="#CD0000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mật Khẩu Bên Dưới:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000099" />
+
+    <EditText
+        android:id="@+id/edMKQuenMatKhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@anim/edittextshape"
+        android:ems="10"
+        android:enabled="false"
+        android:textColor="#CD0000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnQuenMatKhauOK"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#008080"
+            android:onClick="QuenMatKhau"
+            android:text="Tiếp tục"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnNhapLaiQMK"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#008080"
+            android:text="Nhập lại"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

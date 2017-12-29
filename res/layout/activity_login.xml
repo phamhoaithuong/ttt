@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFF0"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="50dp"
+    tools:context="com.example.ass_ps04044.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageViewLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="84dp"
+            android:layout_weight="0.55"
+            android:src="@drawable/hinh" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtTenDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên Đăng Nhập:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000099" />
+
+    <EditText
+        android:id="@+id/edIDDangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tên đăng nhập / Email"
+        android:textColor="#CD0000"
+        android:layout_marginTop="5dp"
+        android:background="@anim/edittextshape"
+         >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtMatKhauDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mật Khẩu:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000099" />
+
+    <EditText
+        android:id="@+id/edPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="*******"
+        android:inputType="textPassword"
+        android:textColor="#CD0000"
+        android:layout_marginTop="5dp"
+        android:background="@anim/edittextshape" />
+
+    <CheckBox
+        android:id="@+id/checkSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Ghi nhớ" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnDangNhap"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:background="#008080"
+            android:text="Đăng Nhập"
+            android:onClick="DangNhap"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnResetDangNhap"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="#008080"
+            android:focusable="false"
+            android:text="Nhập Lại"
+            android:onClick="NhapLai"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|right"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/txtQuenMatKhau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu  "
+            android:textSize="16sp"
+            android:onClick="QuenMatKhau"
+             />
+
+        <TextView
+            android:id="@+id/txtDangKy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|  Tạo tài khoản" 
+            android:onClick="DangKy"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+</LinearLayout>

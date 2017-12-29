@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:padding="2dp" >
+
+        <EditText
+            android:id="@+id/txtNhapSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnAddSettings"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/spnSettings"
+            android:layout_weight="0.03"
+            android:singleLine="true"
+            android:textColor="#0099CD" />
+
+        <ImageButton
+            android:id="@+id/btnAddSettings"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:onClick="ThemVao"
+            android:src="@drawable/add" />
+
+        <Spinner
+            android:id="@+id/spnSettings"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:layout_alignBottom="@+id/txtNhapSettings"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btnAddSettings" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:background="#99FF00" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:background="#FFFFFF"
+        android:padding="2dp" >
+
+        <ListView
+            android:id="@+id/listView_Settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#b5b5b5"
+            android:dividerHeight="1dp" >
+        </ListView>
+    </FrameLayout>
+
+</LinearLayout>

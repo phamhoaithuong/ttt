@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lbl23123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="tienGD"
+        android:textColor="#A000F6"
+        android:drawableRight="@drawable/coins"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_exp_child_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lbl2222"
+        android:layout_alignBottom="@+id/lbl2222"
+        android:layout_alignParentLeft="true"
+        android:text="Ngày: "
+        android:textColor="#FCBB01" />
+
+    <TextView
+        android:id="@+id/lbl2222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblTenGD"
+        android:layout_toRightOf="@+id/txt_exp_child_name"
+        android:text="NgayGD"
+        android:textColor="#00CD01" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Mô tả: "
+        android:textColor="#FCBB01" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblSuaSoTien"
+        android:layout_alignBottom="@+id/lblSuaSoTien"
+        android:layout_alignParentLeft="true"
+        android:text="Ghi chú: "
+        android:textColor="#FCBB01" />
+
+    <TextView
+        android:id="@+id/lblSuaSoTien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl2222"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="GhiChiGD"
+        android:textColor="#00CD01" />
+
+    <TextView
+        android:id="@+id/lblTenGD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="tenGD"
+        android:textColor="#00CD01" />
+
+</RelativeLayout>
